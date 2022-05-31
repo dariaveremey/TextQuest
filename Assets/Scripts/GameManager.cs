@@ -3,7 +3,6 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
-
 public class GameManager : MonoBehaviour
 
 {
@@ -39,7 +38,6 @@ public class GameManager : MonoBehaviour
         _menuButton.onClick.AddListener(MenuButtonClicked);
         SetCurrentStep(_greetStep);
     }
-
     private void Update()
     {
         CheckGameOver();
@@ -59,7 +57,6 @@ public class GameManager : MonoBehaviour
         }
     }
     
-    //
 
     #endregion
 
@@ -118,6 +115,5 @@ public class GameManager : MonoBehaviour
         if (_currentStep.Choices.Length == 1 ) ;
         _sceneLoader.LoadScene(_winSceneName);
     }
-
     #endregion
 }
